@@ -1,0 +1,45 @@
+.table,th,td {
+    border: 1px solid black;
+}
+
+td:first-child {
+    padding: 5px;
+    width: 50px;
+    min-width: 50px;
+}
+
+#image {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+#download-button {
+    margin-left: 45%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+@media only screen and (max-width:800px) {
+    #table tbody,
+    #table tr,
+    #table td {
+        display: flexbox;
+    }
+    #table thead tr {
+        position: relative;
+    }
+    #table td {
+        position: relative;
+        border-bottom: 1.5px solid black;
+    }
+    #table td::before {
+        position: absolute;
+        left: 6px;
+        font-weight: bold;
+    }
+    #table tr {
+        border-bottom: 1px solid black;
+    }
+}
+
